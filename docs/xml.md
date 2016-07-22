@@ -51,26 +51,46 @@ Plná verze xml feedu:
 
 |element|povinný|formát|v případě nesplnění formátu|v případě prázdného nebo nezadaného|
 |---|---|---|---|---|
-|id|✔|int|ignorvání celého produktu|ignorvání celého produktu|
-|title|✔|string 255|Oříznutí na 255 znaků|ignorvání celého produktu|
-|url|✔|string 1024|ignorvání celého produktu|ignorvání celého produktu|
-|price|✔|float\int|ignorvání celého produktu|ignorvání celého produktu|
-|author| |Příjmení, Jméno|pokud obsahje více než jedno slovo, je poslední slovo posunuto na první pozici a je za něj přidána čárka|ignorování elementu|
-|illustrator| |Příjmení, Jméno|pokud obsahuje více než jedno slovo, je poslední slovo posunuto na první pozici a je za něj přidána čárka|ignorování elementu|
-|publisher| |string|ignorování elementu|ignorování elementu|
-|year| |int|ignorování elementu|ignorování elementu|
-|pages| |int|ignorování elementu|ignorování elementu|
-|imgurl| |string 1024|ignorování elementu|ignorování elementu|
-|inserted| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
-|ordered| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
-|sold| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
-|deleted| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
-|state| |string|ignorování elementu|ignorování elementu|
-|note| |text|ignorování elementu|ignorování elementu|
-|place| |string|ignorování elementu|ignorování elementu|
-|issue| |string|ignorování elementu|ignorování elementu|
-|tag| |string|ignorování elementu|ignorování elementu|
-|isbn| |string|ignorování elementu|ignorování elementu|
+|[id](#id)|✔|int|ignorvání celého produktu|ignorvání celého produktu|
+|[title](#title)|✔|string 255|Oříznutí na 255 znaků|ignorvání celého produktu|
+|[url](#url)|✔|string 1024|ignorvání celého produktu|ignorvání celého produktu|
+|[price](#price)|✔|float\int|ignorvání celého produktu|ignorvání celého produktu|
+|[contributor](#contributor)| |Příjmení, Jméno|pokud obsahje více než jedno slovo, je poslední slovo posunuto na první pozici a je za něj přidána čárka|ignorování elementu|
+|[publisher](#publisher)| |string|ignorování elementu|ignorování elementu|
+|[year](#year)| |int|ignorování elementu|ignorování elementu|
+|[pages](#pages)| |int|ignorování elementu|ignorování elementu|
+|[imgurl](#imgurl)| |string 1024|ignorování elementu|ignorování elementu|
+|[inserted](#inserted)| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
+|[ordered](#ordered)| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
+|[sold](#sold)| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
+|[deleted](#deleted)| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
+|[state](#state)| |string|ignorování elementu|ignorování elementu|
+|[note](#note)| |text|ignorování elementu|ignorování elementu|
+|[place](#place)| |string|ignorování elementu|ignorování elementu|
+|[issue](#issue)| |string|ignorování elementu|ignorování elementu|
+|[tag](#tag)| |string|ignorování elementu|ignorování elementu|
+|[isbn](#isbn)| |string|ignorování elementu|ignorování elementu|
+
+
+#### <a name='id'></a>id
+#### <a name='title'></a>title
+#### <a name='url'></a>url
+#### <a name='price'></a>price
+#### <a name='contributor'></a>contributor
+#### <a name='publisher'></a>publisher
+#### <a name='year'></a>year
+#### <a name='pages'></a>pages
+#### <a name='imgurl'></a>imgurl
+#### <a name='inserted'></a>inserted
+#### <a name='ordered'></a>ordered
+#### <a name='sold'></a>sold
+#### <a name='deleted'></a>deleted
+#### <a name='state'></a>state
+#### <a name='note'></a>note
+#### <a name='place'></a>place
+#### <a name='issue'></a>issue
+#### <a name='tag'></a>tag
+#### <a name='isbn'></a>isbn
 
 
 aliasy názvů elementů:
@@ -80,8 +100,7 @@ aliasy názvů elementů:
 |title|name; nazev|
 |url|link; adresa|
 |price|cena|
-|author|autor; contributor|
-|illustrator|ilustrator; contributor|
+|contributor|autor; author; ilustrator; contributor|
 |publisher|nakladetel|
 |year|rok|
 |pages|stran|
