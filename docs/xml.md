@@ -111,7 +111,7 @@ tag / kategorie knihy, pokud jich je víc, tento element se opakuje, pokud se je
 #### <a name='isbn'></a>isbn
 ISBN/EAN prodkutu
 
-aliasy názvů elementů:
+## Aliasy názvů elementů
 
 |element|aliasy|
 |---|---|
