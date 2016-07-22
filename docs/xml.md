@@ -50,7 +50,7 @@ Plná verze xml feedu:
 ## Specifikace jednotlivých elementů
 
 |element|povinný|formát|v případě nesplnění formátu|v případě prázdného nebo nezadaného|
-|-|-|-|-|-|
+|---|---|---|---|---|
 |id|✔|int|ignorvání celého produktu|ignorvání celého produktu|
 |title|✔|string 255|Oříznutí na 255 znaků|ignorvání celého produktu|
 |url|✔|string 1024|ignorvání celého produktu|ignorvání celého produktu|
@@ -76,7 +76,7 @@ Plná verze xml feedu:
 aliasy názvů elementů:
 
 |element|aliasy|
-|-|-|
+|---|---|
 |title|name; nazev|
 |url|link; adresa|
 |price|cena|
