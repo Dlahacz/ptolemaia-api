@@ -73,25 +73,43 @@ Plná verze xml feedu:
 
 
 #### <a name='id'></a>id
+identifikator produktu
 #### <a name='title'></a>title
+název knihy
 #### <a name='url'></a>url
+adresa knihy na vašem eshopu
 #### <a name='price'></a>price
+cena knihy
 #### <a name='contributor'></a>contributor
+autor / ilustrator, pokud jich je víc, tento element se opakuje
 #### <a name='publisher'></a>publisher
+vydavatel
 #### <a name='year'></a>year
+rok vydání
 #### <a name='pages'></a>pages
+počet stran
 #### <a name='imgurl'></a>imgurl
+obrázek, pokud jich je víc, tento element se opakuje
 #### <a name='inserted'></a>inserted
+datum vystavení
 #### <a name='ordered'></a>ordered
+datum objednání (zruší produkt z vyhledávání)
 #### <a name='sold'></a>sold
+datum prodání (zruší produkt z vyhledávání)
 #### <a name='deleted'></a>deleted
+datum smazání (zruší produkt z vyhledávání)
 #### <a name='state'></a>state
+stav knihy
 #### <a name='note'></a>note
+poznámka / popis
 #### <a name='place'></a>place
+místo vydání
 #### <a name='issue'></a>issue
+vydání
 #### <a name='tag'></a>tag
+tag / kategorie knihy, pokud jich je víc, tento element se opakuje, pokud se jedná o stormové kategorie, každá vrstva samostatný element.
 #### <a name='isbn'></a>isbn
-
+ISBN/EAN prodkutu
 
 aliasy názvů elementů:
 
