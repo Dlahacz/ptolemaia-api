@@ -40,9 +40,8 @@ Plná verze xml feedu:
     <pages>344</pages>
     <description>pevná vazba s obálkou</description>
     <category>společenské vědy</category>
-    <url>http://www.dantikvariat.cz/cerny-vaclav/lid-a-literatura-ve-stredoveku-zvlaste-v-romanskych-zemi-134382</url>
     <imgurl>http://www.dantikvariat.cz/nahled/obr/obr_134382.jpg</imgurl>
-    inserted>2016-01-01 11:55:00</inserted>
+    <inserted>2016-01-01 11:55:00</inserted>
   </book>
 
 </books>
@@ -56,19 +55,31 @@ Plná verze xml feedu:
 |title|✔|string 255|Oříznutí na 255 znaků|ignorvání celého produktu|
 |url|✔|string 1024|ignorvání celého produktu|ignorvání celého produktu|
 |price|✔|float\int|ignorvání celého produktu|ignorvání celého produktu|
-||
+|author||Příjmení, Jméno|pokud obsahje více než jedno slovo, je poslední slovo posunuto na první pozici a je za něj přidána čárka|ignorování elementu|
+|illustrator||Příjmení, Jméno|pokud obsahje více než jedno slovo, je poslední slovo posunuto na první pozici a je za něj přidána čárka|ignorování elementu|
+|publisher||string|ignorování elementu|ignorování elementu|
+|year||int|ignorování elementu|ignorování elementu|
+|pages||int|ignorování elementu|ignorování elementu|
+|imgurl||string 1024|ignorování elementu|ignorování elementu|
+|inserted||YYYY-MM-DD HH:MM:SS|ignorování element|ignorování element|
+|ordered||YYYY-MM-DD HH:MM:SS|ignorování element|ignorování element|
+|sold||YYYY-MM-DD HH:MM:SS|ignorování element|ignorování element|
 
 aliasy názvů elementů:
+
 |element|aliasy|
 |-|-|
-|title|name;nazev|
-|url|link;adresa
+|title|name; nazev|
+|url|link; adresa|
 |price|cena|
-|author|autor;contributor|
-|illustrator|ilustrator;contributor|
+|author|autor; contributor|
+|illustrator|ilustrator; contributor|
 |publisher|nakladetel|
-|year|issue;rok|
+|year|issue; rok|
 |pages|stran|
+|imgurl|img; imglink; imghref|
+|inserted|start|
+|sold|end|
 
 ## Odstranění produktu z vyhledávání
 
