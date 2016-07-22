@@ -56,7 +56,7 @@ Plná verze xml feedu:
 |url|✔|string 1024|ignorvání celého produktu|ignorvání celého produktu|
 |price|✔|float\int|ignorvání celého produktu|ignorvání celého produktu|
 |author| |Příjmení, Jméno|pokud obsahje více než jedno slovo, je poslední slovo posunuto na první pozici a je za něj přidána čárka|ignorování elementu|
-|illustrator| |Příjmení, Jméno|pokud obsahje více než jedno slovo, je poslední slovo posunuto na první pozici a je za něj přidána čárka|ignorování elementu|
+|illustrator| |Příjmení, Jméno|pokud obsahuje více než jedno slovo, je poslední slovo posunuto na první pozici a je za něj přidána čárka|ignorování elementu|
 |publisher| |string|ignorování elementu|ignorování elementu|
 |year| |int|ignorování elementu|ignorování elementu|
 |pages| |int|ignorování elementu|ignorování elementu|
@@ -67,10 +67,10 @@ Plná verze xml feedu:
 |deleted| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
 |state| |string|ignorování elementu|ignorování elementu|
 |note| |text|ignorování elementu|ignorování elementu|
-|place| |string|text|ignorování elementu|ignorování elementu|
-|issue| |string|text|ignorování elementu|ignorování elementu|
-|tag| |string|text|ignorování elementu|ignorování elementu|
-|isbn| |string|text|ignorování elementu|ignorování elementu|
+|place| |string|ignorování elementu|ignorování elementu|
+|issue| |string|ignorování elementu|ignorování elementu|
+|tag| |string|ignorování elementu|ignorování elementu|
+|isbn| |string|ignorování elementu|ignorování elementu|
 
 
 aliasy názvů elementů:
