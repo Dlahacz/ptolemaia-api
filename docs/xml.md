@@ -1,4 +1,4 @@
-# specifikace XML feedu ptolemaia
+# Specifikace XML feedu ptolemaia
 
 *tato specifikace není konečná a může se měnit, zaručujeme ale její zpětnou kompatilitu*
 
@@ -61,10 +61,17 @@ Plná verze xml feedu:
 |year| |int|ignorování elementu|ignorování elementu|
 |pages| |int|ignorování elementu|ignorování elementu|
 |imgurl| |string 1024|ignorování elementu|ignorování elementu|
-|inserted| |YYYY-MM-DD HH:MM:SS|ignorování element|ignorování element|
-|ordered| |YYYY-MM-DD HH:MM:SS|ignorování element|ignorování element|
-|sold| |YYYY-MM-DD HH:MM:SS|ignorování element|ignorování element|
-|state| |string|ignorování element|ignorování element|
+|inserted| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
+|ordered| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
+|sold| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
+|deleted| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
+|state| |string|ignorování elementu|ignorování elementu|
+|note| |text|ignorování elementu|ignorování elementu|
+|place| |string|text|ignorování elementu|ignorování elementu|
+|issue| |string|text|ignorování elementu|ignorování elementu|
+|tag| |string|text|ignorování elementu|ignorování elementu|
+|isbn| |string|text|ignorování elementu|ignorování elementu|
+
 
 aliasy názvů elementů:
 
@@ -76,16 +83,22 @@ aliasy názvů elementů:
 |author|autor; contributor|
 |illustrator|ilustrator; contributor|
 |publisher|nakladetel|
-|year|issue; rok|
+|year|rok|
 |pages|stran|
 |imgurl|img; imglink; imghref; obrazek|
 |inserted|start; vlozeno|
 |sold|end; prodano|
+|deleted|removed; smazano|
 |state|condition; stav|
+|note|poznamaka; popis; description|
+|issue|vydani|
+|place|misto|
+|tag|category|
+|isbn|ean|
 
 ## Odstranění produktu z vyhledávání
 
-Produkt je možné z vyhledávání odebrat tak, že jej z xml feedu odstraníte. Doporučujeme, ale odeslat v xml záznam s elementem **ordered** (objednané položky) nebo **sold** (prodané položky) (s časovím záznamem ve formátu YYYY-MM-DD HH:MM:SS) a **id** produktu, ostatní elementy již není potřeba do toho záznamu přidávat.
+Produkt je možné z vyhledávání odebrat tak, že jej z xml feedu odstraníte. Doporučujeme, ale odeslat v xml záznam s elementem **ordered** (objednané položky), **sold** (prodané položky) nebo **deleted** (s časovím záznamem ve formátu YYYY-MM-DD HH:MM:SS) a **id** produktu, ostatní elementy již není potřeba do toho záznamu přidávat.
 
 ```xml
 <book>
@@ -97,4 +110,13 @@ Produkt je možné z vyhledávání odebrat tak, že jej z xml feedu odstraníte
   <id>134381</id>
   <sold>2016-01-01 11:55:00</sold>
 </book>
+
+<book>
+  <id>134381</id>
+  <deleted>2016-01-01 11:55:00</deleted>
+</book>
 ```
+
+# Realtime XML feed
+
+Realtime XMl feed je stejný jako klasický XML feed jen obsahuje aktualní data (přidání, úpravy, prodej, mazání) za poslední hodinu, narozdíl od klasického xml feedu je nutné pro smazání používat elementy ordered, sold, deleted.
