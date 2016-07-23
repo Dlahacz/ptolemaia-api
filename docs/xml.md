@@ -1,10 +1,17 @@
 # Obecné informace
 Ptolemaia je schopná v zásadě z pracovat jakýkoliv XML feed (např. pro heureka.cz nebo zbozi.cz), ale velmi doporučujeme vytvořit feed podle následující specifikace. Ve vyhledávání se zobrazí více informací a zvýší se konverze (více zákazníků přijde na Váš web).
-# Specifikace XML feedu ptolemaia
+## Navigace
+- [Specifikace XML feedu ptolemaia](#specifikace)
+ - [Přidání položky do vyhledávání](#pridani)
+ - [Specifikace jednotlivých elementů](#ementy)
+ - [Aliasy názvů elementů](#aliasy)
+ - [Odstranění produktu z vyhledávání](#odstraneni)
+- [Realtime XML feed](#realtime)
+# <a name="specifikace"></a>Specifikace XML feedu ptolemaia
 
 *tato specifikace není konečná a může se měnit, ale ručíme za její zpětnou kompatilitu*
 
-## Přidání položky do vyhledávání
+## <a name="pridani"></a>Přidání položky do vyhledávání
 
 povinné elementy jsou **id**, **title**, **url** a **price**
 
@@ -57,7 +64,7 @@ Plná verze xml feedu:
 </books>
 ```
 
-## Specifikace jednotlivých elementů
+## <a name="elementy"></a>Specifikace jednotlivých elementů
 
 |element|povinný|formát|v případě nesplnění formátu|v případě prázdného nebo nezadaného|
 |---|---|---|---|---|
@@ -124,7 +131,7 @@ tag / Kategorie. Pokud jich je víc, tento element se opakuje. Pokud se jedná o
 #### <a name='isbn'></a>isbn
 ISBN/EAN prodkutu, pokud jich je víc, tento element se opakuje
 
-## Aliasy názvů elementů
+## <a name="aliasy"></a>Aliasy názvů elementů
 
 |element|aliasy|
 |---|---|
@@ -147,7 +154,7 @@ ISBN/EAN prodkutu, pokud jich je víc, tento element se opakuje
 |isbn|ean|
 |binding|vazba|
 
-## Odstranění produktu z vyhledávání
+## <a name="odstraneni"></a>Odstranění produktu z vyhledávání
 
 Produkt je možné z vyhledávání odebrat tak, že jej z xml feedu odstraníte. Ale z důvodu předcházení chybám doporučujeme odeslat v xml záznam s elementem **ordered** (objednané položky), **sold** (prodané položky) nebo **deleted** (s časovím záznamem ve formátu YYYY-MM-DD HH:MM:SS) a **id** produktu, ostatní elementy již není potřeba do toho záznamu přidávat.
 
@@ -168,6 +175,6 @@ Produkt je možné z vyhledávání odebrat tak, že jej z xml feedu odstraníte
 </book>
 ```
 
-# Realtime XML feed
+# <a name="realtime"></a>Realtime XML feed
 
 Realtime XMl feed je stejný jako klasický XML feed, ale obsahuje aktualní data (přidání, úpravy, prodej, mazání) za poslední hodinu. Narozdíl od klasického xml feedu je nutné pro smazání používat elementy ordered, sold, deleted. Tento feed feed není povinný, ale doporučujeme jej, aby se o nově přidaných knihách zákazníci dozvěděli co nejdříve.
