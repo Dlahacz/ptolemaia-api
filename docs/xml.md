@@ -167,4 +167,4 @@ Produkt je možné z vyhledávání odebrat tak, že jej z xml feedu odstraníte
 
 # Realtime XML feed
 
-Realtime XMl feed je stejný jako klasický XML feed jen obsahuje aktualní data (přidání, úpravy, prodej, mazání) za poslední hodinu, narozdíl od klasického xml feedu je nutné pro smazání používat elementy ordered, sold, deleted.
+Realtime XMl feed je stejný jako klasický XML feed jen obsahuje aktualní data (přidání, úpravy, prodej, mazání) za poslední hodinu, narozdíl od klasického xml feedu je nutné pro smazání používat elementy ordered, sold, deleted. Tento feed feed není povinný, ale doporučujeme jej, aby se o Vámi přidaných knihách zákazníci dozvěděli co nejdříve.
