@@ -1,3 +1,5 @@
+# Obecné informace
+Ptolemaia je schopná v zásadě z pracovat jakýkoliv XML feed (např. pro heureka.cz nebo zbozi.cz), doporučuje ale vytvořit feed podle následující specifikace. Ve vyhledávání se tak bude zobrazovat více informací a detailů, a lépe tak přivedete zákazníka na svůj eshop.
 # Specifikace XML feedu ptolemaia
 
 *tato specifikace není konečná a může se měnit, zaručujeme ale její zpětnou kompatilitu*
