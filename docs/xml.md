@@ -15,9 +15,9 @@ Minimalistická verze xml feedu:
 <books>
 
   <book>
-    <id>134382</id>
-    <title>Lid a literatura ve středověku zvláště v románských zemích</title>
-    <url>http://www.dantikvariat.cz/cerny-vaclav/lid-a-literatura-ve-stredoveku-zvlaste-v-romanskych-zemi-134382</url>
+    <id>12345</id>
+    <title>Název knihy</title>
+    <url>https://www.adresa.cz/kniha/nazev-knihy</url>
     <price>200</price>
   </book>
 
@@ -31,18 +31,23 @@ Plná verze xml feedu:
 <books>
 
   <book>
-    <id>134382</id>
-    <title>Lid a literatura ve středověku zvláště v románských zemích</title>
-    <url>http://www.dantikvariat.cz/cerny-vaclav/lid-a-literatura-ve-stredoveku-zvlaste-v romanskych-zemi-134382</url>
+    <id>12345</id>
+    <title>Název knihy</title>
+    <url>>https://www.adresa.cz/kniha/nazev-knihy</url>
     <price>200</price>
-    <author>Černý, Václav</author>
-    <illustrator></illustrator>
-    <publisher>Nakladatelství Československé akademie věd</publisher>
-    <year>1958</year>
-    <pages>344</pages>
-    <description>pevná vazba s obálkou</description>
-    <category>společenské vědy</category>
-    <imgurl>http://www.dantikvariat.cz/nahled/obr/obr_134382.jpg</imgurl>
+    <contributor>Příjmení, Jméno</contributor>
+    <contributor>Příjmení, Jméno druheho autora</contributor>
+    <publisher>Jméno nakladatelství</publisher>
+    <year>1918</year>
+    <pages>123</pages>
+    <note>Bratři Strugačtí jsou dnes nejvýznamnější zástupci sovětské science fiction, uznávaní a vydávaní v celém světě. Za Piknik u cesty dostali švédskou cenu Julese Verna, za jinou knihu významnou sovětskou cenu Aelita, určenou pro nejlepší vědeckofantastická díla. Mnoho jejich knih vyšlo i česky. </note>
+    <tag>společenské vědy</tag>
+    <imgurl>https://www.adresa.cz/images/12345.jpg</imgurl>
+    <binding>pevná vazba s obálkou</binding>
+    <state>Horší, natržená obálka</state>
+    <place>Praha</place>
+    <issue>1</issue>
+    <isbn>80-7254-259-1</isbn>
     <inserted>2016-01-01 11:55:00</inserted>
   </book>
 
@@ -67,6 +72,7 @@ Plná verze xml feedu:
 |[sold](#sold)| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
 |[deleted](#deleted)| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
 |[state](#state)| |string|ignorování elementu|ignorování elementu|
+|[binding](#binding)| |string|ignorování elementu|ignorování elementu|
 |[note](#note)| |text|ignorování elementu|ignorování elementu|
 |[place](#place)| |string|ignorování elementu|ignorování elementu|
 |[issue](#issue)| |string|ignorování elementu|ignorování elementu|
@@ -102,6 +108,8 @@ datum prodání (zruší produkt z vyhledávání)
 datum smazání (zruší produkt z vyhledávání)
 #### <a name='state'></a>state
 stav knihy
+#### <a name='binding'></a>binding
+vazba knihy
 #### <a name='note'></a>note
 poznámka / popis
 #### <a name='place'></a>place
@@ -111,7 +119,7 @@ vydání
 #### <a name='tag'></a>tag
 tag / kategorie knihy, pokud jich je víc, tento element se opakuje, pokud se jedná o stormové kategorie, každá vrstva samostatný element.
 #### <a name='isbn'></a>isbn
-ISBN/EAN prodkutu
+ISBN/EAN prodkutu, pokud jich je víc, tento element se opakuje
 
 ## Aliasy názvů elementů
 
@@ -134,6 +142,7 @@ ISBN/EAN prodkutu
 |place|misto|
 |tag|category|
 |isbn|ean|
+|binding|vazba|
 
 ## Odstranění produktu z vyhledávání
 
