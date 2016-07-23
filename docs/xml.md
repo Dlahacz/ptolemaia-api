@@ -59,14 +59,14 @@ Plná verze xml feedu:
 |element|povinný|formát|v případě nesplnění formátu|v případě prázdného nebo nezadaného|
 |---|---|---|---|---|
 |[id](#id)|✔|int|ignorvání celého produktu|ignorvání celého produktu|
-|[title](#title)|✔|string 255|Oříznutí na 255 znaků|ignorvání celého produktu|
-|[url](#url)|✔|string 1024|ignorvání celého produktu|ignorvání celého produktu|
+|[title](#title)|✔|string|ignorvání celého produktu|ignorvání celého produktu|
+|[url](#url)|✔|string|ignorvání celého produktu|ignorvání celého produktu|
 |[price](#price)|✔|float\int|ignorvání celého produktu|ignorvání celého produktu|
 |[contributor](#contributor)| |Příjmení, Jméno|pokud obsahje více než jedno slovo, je poslední slovo posunuto na první pozici a je za něj přidána čárka|ignorování elementu|
 |[publisher](#publisher)| |string|ignorování elementu|ignorování elementu|
 |[year](#year)| |int|ignorování elementu|ignorování elementu|
 |[pages](#pages)| |int|ignorování elementu|ignorování elementu|
-|[imgurl](#imgurl)| |string 1024|ignorování elementu|ignorování elementu|
+|[imgurl](#imgurl)| |string|ignorování elementu|ignorování elementu|
 |[inserted](#inserted)| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
 |[ordered](#ordered)| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
 |[sold](#sold)| |YYYY-MM-DD HH:MM:SS|ignorování elementu|ignorování elementu|
