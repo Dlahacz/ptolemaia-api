@@ -1,8 +1,8 @@
 # Obecné informace
-Ptolemaia je schopná v zásadě z pracovat jakýkoliv XML feed (např. pro heureka.cz nebo zbozi.cz), doporučuje ale vytvořit feed podle následující specifikace. Ve vyhledávání se tak bude zobrazovat více informací a detailů, a lépe tak přivedete zákazníka na svůj eshop.
+Ptolemaia je schopná v zásadě z pracovat jakýkoliv XML feed (např. pro heureka.cz nebo zbozi.cz), ale velmi doporučujeme vytvořit feed podle následující specifikace. Ve vyhledávání se zobrazí více informací a zvýší se konverze (více zákazníků přijde na Váš web).
 # Specifikace XML feedu ptolemaia
 
-*tato specifikace není konečná a může se měnit, zaručujeme ale její zpětnou kompatilitu*
+*tato specifikace není konečná a může se měnit, ale ručíme za její zpětnou kompatilitu*
 
 ## Přidání položky do vyhledávání
 
@@ -36,12 +36,15 @@ Plná verze xml feedu:
     <url>>https://www.adresa.cz/kniha/nazev-knihy</url>
     <price>200</price>
     <contributor>Příjmení, Jméno</contributor>
-    <contributor>Příjmení, Jméno druheho autora</contributor>
+    <contributor>Příjmení, Jméno druheho autora, ilustrátora, překladatele a pod.</contributor>
+    <contributor>...počet není omezen...</contributor>
     <publisher>Jméno nakladatelství</publisher>
     <year>1918</year>
     <pages>123</pages>
     <note>Bratři Strugačtí jsou dnes nejvýznamnější zástupci sovětské science fiction, uznávaní a vydávaní v celém světě. Za Piknik u cesty dostali švédskou cenu Julese Verna, za jinou knihu významnou sovětskou cenu Aelita, určenou pro nejlepší vědeckofantastická díla. Mnoho jejich knih vyšlo i česky. </note>
     <tag>společenské vědy</tag>
+    <tag>filosofie </tag>
+    <tag>...</tag>
     <imgurl>https://www.adresa.cz/images/12345.jpg</imgurl>
     <binding>pevná vazba s obálkou</binding>
     <state>Horší, natržená obálka</state>
@@ -89,7 +92,7 @@ adresa knihy na vašem eshopu
 #### <a name='price'></a>price
 cena knihy
 #### <a name='contributor'></a>contributor
-autor / ilustrator, pokud jich je víc, tento element se opakuje
+autor / ilustrátor, pokud jich je víc, tento element se opakuje
 #### <a name='publisher'></a>publisher
 vydavatel
 #### <a name='year'></a>year
@@ -117,7 +120,7 @@ místo vydání
 #### <a name='issue'></a>issue
 vydání
 #### <a name='tag'></a>tag
-tag / kategorie knihy, pokud jich je víc, tento element se opakuje, pokud se jedná o stormové kategorie, každá vrstva samostatný element.
+tag / Kategorie. Pokud jich je víc, tento element se opakuje. Pokud se jedná o stromové kategorie, každá vrstva má samostatný element.
 #### <a name='isbn'></a>isbn
 ISBN/EAN prodkutu, pokud jich je víc, tento element se opakuje
 
@@ -146,7 +149,7 @@ ISBN/EAN prodkutu, pokud jich je víc, tento element se opakuje
 
 ## Odstranění produktu z vyhledávání
 
-Produkt je možné z vyhledávání odebrat tak, že jej z xml feedu odstraníte. Doporučujeme, ale odeslat v xml záznam s elementem **ordered** (objednané položky), **sold** (prodané položky) nebo **deleted** (s časovím záznamem ve formátu YYYY-MM-DD HH:MM:SS) a **id** produktu, ostatní elementy již není potřeba do toho záznamu přidávat.
+Produkt je možné z vyhledávání odebrat tak, že jej z xml feedu odstraníte. Ale z důvodu předcházení chybám doporučujeme odeslat v xml záznam s elementem **ordered** (objednané položky), **sold** (prodané položky) nebo **deleted** (s časovím záznamem ve formátu YYYY-MM-DD HH:MM:SS) a **id** produktu, ostatní elementy již není potřeba do toho záznamu přidávat.
 
 ```xml
 <book>
@@ -167,4 +170,4 @@ Produkt je možné z vyhledávání odebrat tak, že jej z xml feedu odstraníte
 
 # Realtime XML feed
 
-Realtime XMl feed je stejný jako klasický XML feed jen obsahuje aktualní data (přidání, úpravy, prodej, mazání) za poslední hodinu, narozdíl od klasického xml feedu je nutné pro smazání používat elementy ordered, sold, deleted. Tento feed feed není povinný, ale doporučujeme jej, aby se o Vámi přidaných knihách zákazníci dozvěděli co nejdříve.
+Realtime XMl feed je stejný jako klasický XML feed, ale obsahuje aktualní data (přidání, úpravy, prodej, mazání) za poslední hodinu. Narozdíl od klasického xml feedu je nutné pro smazání používat elementy ordered, sold, deleted. Tento feed feed není povinný, ale doporučujeme jej, aby se o nově přidaných knihách zákazníci dozvěděli co nejdříve.
