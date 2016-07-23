@@ -3,10 +3,11 @@ Ptolemaia je schopná v zásadě z pracovat jakýkoliv XML feed (např. pro heur
 ## Navigace
 - [Specifikace XML feedu ptolemaia](#specifikace)
  - [Přidání položky do vyhledávání](#pridani)
- - [Specifikace jednotlivých elementů](#ementy)
+ - [Specifikace jednotlivých elementů](#elementy)
  - [Aliasy názvů elementů](#aliasy)
  - [Odstranění produktu z vyhledávání](#odstraneni)
 - [Realtime XML feed](#realtime)
+
 # Specifikace XML feedu ptolemaia<a name="specifikace"></a>
 
 *tato specifikace není konečná a může se měnit, ale ručíme za její zpětnou kompatilitu*
