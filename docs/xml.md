@@ -69,7 +69,7 @@ Plná verze xml feedu:
 
 |element|povinný|formát|v případě nesplnění formátu|v případě prázdného nebo nezadaného|
 |---|---|---|---|---|
-|[id](#id)|✔|int|ignorvání celého produktu|ignorvání celého produktu|
+|[id](#id)|✔|int\string|ignorvání celého produktu|ignorvání celého produktu|
 |[title](#title)|✔|string|ignorvání celého produktu|ignorvání celého produktu|
 |[url](#url)|✔|string|ignorvání celého produktu|ignorvání celého produktu|
 |[price](#price)|✔|float\int|ignorvání celého produktu|ignorvání celého produktu|
