@@ -139,7 +139,7 @@ ISBN/EAN prodkutu, pokud jich je víc, tento element se opakuje
 |title|name; nazev|
 |url|link; adresa|
 |price|cena|
-|contributor|autor; author; ilustrator; contributor|
+|contributor|autor; author; ilustrator; illustrator|
 |publisher|nakladetel|
 |year|rok|
 |pages|stran|
@@ -148,7 +148,7 @@ ISBN/EAN prodkutu, pokud jich je víc, tento element se opakuje
 |sold|end; prodano|
 |deleted|removed; smazano|
 |state|condition; stav|
-|note|poznamaka; popis; description|
+|note|poznamka; popis; description|
 |issue|vydani|
 |place|misto|
 |tag|category|
