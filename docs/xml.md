@@ -140,7 +140,7 @@ ISBN/EAN prodkutu, pokud jich je víc, tento element se opakuje
 |url|link; adresa|
 |price|cena|
 |contributor|autor; author; ilustrator; illustrator|
-|publisher|nakladetel|
+|publisher|nakladatel|
 |year|rok|
 |pages|stran|
 |imgurl|img; imglink; imghref; obrazek|
