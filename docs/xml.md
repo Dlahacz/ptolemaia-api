@@ -1,14 +1,14 @@
 # Obecné informace
-Ptolemaia je schopná v zásadě z pracovat jakýkoliv XML feed (např. pro heureka.cz nebo zbozi.cz), ale velmi doporučujeme vytvořit feed podle následující specifikace. Ve vyhledávání se zobrazí více informací a zvýší se konverze (více zákazníků přijde na Váš web).
+Ulovknihu je schopná v zásadě z pracovat jakýkoliv XML feed (např. pro heureka.cz nebo zbozi.cz), ale velmi doporučujeme vytvořit feed podle následující specifikace. Ve vyhledávání se zobrazí více informací a zvýší se konverze (více zákazníků přijde na Váš web).
 ## Navigace
-- [Specifikace XML feedu ptolemaia](#specifikace)
+- [Specifikace XML feedu ulovknihu](#specifikace)
  - [Přidání položky do vyhledávání](#pridani)
  - [Specifikace jednotlivých elementů](#elementy)
  - [Aliasy názvů elementů](#aliasy)
  - [Odstranění produktu z vyhledávání](#odstraneni)
 - [Realtime XML feed](#realtime)
 
-# Specifikace XML feedu ptolemaia<a name="specifikace"></a>
+# Specifikace XML feedu ulovknihu<a name="specifikace"></a>
 
 *tato specifikace není konečná a může se měnit, ale ručíme za její zpětnou kompatilitu*
 
